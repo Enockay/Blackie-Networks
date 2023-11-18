@@ -1,0 +1,141 @@
+.items{
+    display:flex;
+    flex-direction: row;
+    gap:5%; 
+    justify-content: center;
+    margin-top: 3%;
+}
+img{
+    max-width:100px;
+    height: auto;
+}
+.para{
+    font-size: 1.2rem;
+}
+.logo{
+    display: flex;
+    background-color: rgba(251, 255, 249, 0.87);
+    border-radius: 0.9rem;
+    color: black;
+    gap: 3%;
+    justify-content: space-evenly;
+    opacity: 70%;
+}
+.head1{
+    margin-top: 5%;
+    max-width: 20%;
+}
+h4{
+    cursor: pointer;
+    transition: transform;
+    color: skyblue;
+}
+h4:hover{
+    color: rgb(128, 94, 0);
+}
+.main{
+    margin-top: 3%;
+    display: flex;
+    gap: 5%;
+}
+.container1{
+    display: flex;
+    min-height: 10rem;
+    color: aqua;
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.container2{
+    min-width: 50%;
+    min-height: 30rem;
+}
+.packages{
+    display: flex;
+    flex-direction: column;
+}
+
+.advert{
+    font-size: 3.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container3{
+    min-width: 30%;
+    background-color: #213437;
+    border-radius: 0.9rem;
+}
+@media (max-width : 800px) {
+    .advert{
+        font-size: 1.5rem;
+    }
+
+    
+    .container2{
+        width: 60%;
+    }
+    .container3{
+        width: 95%;
+        min-height: 20rem;
+    }
+    button{
+        border: collapse;
+        max-width: 5rem;
+        max-height: auto;
+        background-color: #3538e7;
+    }
+    .item-1{
+        padding: 1%;
+        min-width: 90%;
+        
+    }
+    .main{
+      display:flex;
+      gap:3px;
+      flex-direction: column;
+    }
+    .advertise{
+        display: flex;
+        flex-direction: column;
+    }
+    .vedio{
+        max-width: 60%;
+        height: 80%;
+    }
+}
+.k-20,.k-30,.k-10,.k-100,.k-50{
+    margin-left: 15%;
+    background-color:green;
+    border-radius: 0.2rem;
+
+}
+.item-1{
+    display: flex;
+    max-width: 80%;
+    background-color: rgb(206, 206, 204);
+    color: black;
+    padding: 3%;
+    border-radius: 0.8rem;
+}
+.cont1-2{
+    display: flex;
+    gap: 2%;
+    min-width: 60%;
+    
+}
+span{
+ justify-content: flex-end;
+ align-items: flex-end;
+}
+#user{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 0.8rem;
+}
+.advertise{
+    display: flex;
+    flex-direction: column;
+    max-width: 20%;
+}
+.p-a{
+    
+}
