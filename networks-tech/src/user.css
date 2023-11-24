@@ -157,4 +157,27 @@ span{
     color: #5e0ae6;
     padding: 5%;
     margin-top: 25%;
+   
+    animation: fadeIn 3s ease-out infinite;
 }
+
+.hidden {
+    display: none;
+  }
+  
+  .initial-offer.animate {
+    animation: fadeIn 3s ease-out infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+     
+     border-top: 5px solid green;
+     border-left: 7px solid green;
+    }
+    to {
+    
+      border-bottom: 9px solid green;
+      border-right: 11px solid green;
+    }
+  }
