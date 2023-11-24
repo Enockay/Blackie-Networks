@@ -1,9 +1,10 @@
 import './user.css'
 import logo from './assets/logo.jpeg'
 import Timer from './time';
-import VideoPlayer from './vedioplayer';
+import LandingPage from './vedioplayer';
 import ContentPackage from './packages';
 import { handleButtonClick } from './packages';
+import InitialOffer from './default';
 
 
 function Design(){
@@ -39,12 +40,13 @@ function Design(){
              <div className='container1'>
                <h2 className='advert'>BRINGING NETWORK AT LOWER PRICE FASTER THAN YOU CAN THINK.</h2>
           </div>
-           <div className='container2'>
+           <div className='container2'> 
+           <InitialOffer/>
         <ContentPackage/>
           </div>
        </div>
        <div className='container3'>
-           <VideoPlayer/>
+       <LandingPage/>  
        </div>
 
        </div>

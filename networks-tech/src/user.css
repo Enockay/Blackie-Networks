@@ -146,3 +146,15 @@ span{
 .p-a{
     
 }
+.inital-offer{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #fff;
+    max-width: 80%;
+    border-radius: 0.9rem;
+    height: auto;
+    color: #5e0ae6;
+    padding: 5%;
+    margin-top: 25%;
+}
