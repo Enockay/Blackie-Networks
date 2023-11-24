@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 let handleButtonClick;
 
 const ContentPackage = () => {
@@ -7,7 +8,7 @@ const [selectedButton, setSelectedButton] = useState(null);
   const [loadedContent, setLoadedContent] = useState('');
 
  handleButtonClick = (button) => {
-    let content;
+    let content ;
     if (button === 'btn1') {
       content = (
         <div className='packages'>
@@ -61,7 +62,7 @@ const [selectedButton, setSelectedButton] = useState(null);
      
         {/* Display the loaded content when a button is selected */}
         {selectedButton && loadedContent}
-        <h3>Thanks for selecting to work with us</h3>
+        <h3>Thanks for choosing to work with us </h3>
       
     </>
     
