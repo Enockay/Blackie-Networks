@@ -17,7 +17,7 @@ function Design(){
             <h5 className='contact'>Whatsapp Me : 0740629611</h5>
             </div>
             <div class = "advertise">
-              <p className='p-a'>Think of Online streaming with apowerful internet of 20 Mbps+</p>
+              <p className='p-a'><h5>Wifi strength 20 MBPS</h5></p>
              <div>
              <Timer/>
              </div>

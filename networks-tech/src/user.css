@@ -17,7 +17,7 @@ img{
     background-color: rgba(251, 255, 249, 0.87);
     border-radius: 0.9rem;
     color: black;
-    gap: 3%;
+    gap:2%;
     justify-content: space-evenly;
     opacity: 70%;
 }
