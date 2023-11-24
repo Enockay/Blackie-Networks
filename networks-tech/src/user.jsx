@@ -12,7 +12,10 @@ function Design(){
        <div className="heading">
         <div className='logo'>
             <p className='para'><img src= {logo} alt="logo"/></p>
-            <h3 class="head1">NETWORK AT LOW PRICE FOR COMRADES</h3>
+            <div className='head1'>
+            <h3 class="">NETWORK AT LOW PRICE FOR COMRADES</h3>
+            <h5 className='contact'>Whatsapp Me : 0740629611</h5>
+            </div>
             <div class = "advertise">
               <p className='p-a'>Think of Online streaming with apowerful internet of 20 Mbps+</p>
              <div>

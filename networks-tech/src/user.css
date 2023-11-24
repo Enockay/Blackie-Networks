@@ -25,6 +25,9 @@ img{
     margin-top: 5%;
     max-width: 20%;
 }
+.btn1,.btn2{
+    box-shadow: azure;
+}
 h4{
     cursor: pointer;
     transition: transform;
@@ -81,7 +84,7 @@ h4:hover{
         border: collapse;
         max-width: 5rem;
         max-height: auto;
-        background-color: #3538e7;
+        background-color: #5e0ae6;
     }
     .item-1{
         padding: 1%;
@@ -98,8 +101,8 @@ h4:hover{
         flex-direction: column;
     }
     .vedio{
-        max-width: 60%;
-        height: 80%;
+        max-width: 50%;
+        height: 60%
     }
 }
 .k-20,.k-30,.k-10,.k-100,.k-50{
