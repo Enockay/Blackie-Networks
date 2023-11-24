@@ -104,6 +104,9 @@ h4:hover{
         max-width: 50%;
         height: 60%
     }
+    .heading{
+        max-width: fit-content;
+    }
 }
 .k-20,.k-30,.k-10,.k-100,.k-50{
     margin-left: 15%;
