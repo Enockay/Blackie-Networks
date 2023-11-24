@@ -13,7 +13,7 @@ function Design(){
         <div className='logo'>
             <p className='para'><img src= {logo} alt="logo"/></p>
             <div className='head1'>
-            <h3 class="">NETWORK AT LOW PRICE FOR COMRADES</h3>
+            <h4 class="">NETWORK AT LOW PRICE FOR COMRADES</h4>
             <h5 className='contact'>Whatsapp Me : 0740629611</h5>
             </div>
             <div class = "advertise">
