@@ -151,7 +151,7 @@ span{
     flex-direction: column;
     align-self: center;
     background-color: #fff;
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 0.9rem;
     height: auto;
     color: #5e0ae6;
