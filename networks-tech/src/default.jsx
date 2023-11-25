@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
-
 const InitialOffer = () => {
   const [userInteracted, setUserInteracted] = useState(false);
   const handleInteraction = () => {
     setUserInteracted(true);
   };
-
 
   return (
     <div className={`inital-offer ${userInteracted ? 'hidden' : 'animate'}`} >
