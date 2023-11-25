@@ -8,8 +8,8 @@ const CustomModal = ({ isOpen, message, onConfirm, onCancel }) => {
           <div className="modal">
               <p>{message}</p>
                <div className="button-container">
-              <button onClick={onConfirm}>Confirm</button>
-              <button onClick={onCancel}>Cancel</button>
+              <button className="prompt-button" onClick={onConfirm}>Confirm</button>
+              <button className='prompt-button' onClick={onCancel}>Cancel</button>
             </div>
           </div>
         </div>

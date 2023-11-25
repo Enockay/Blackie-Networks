@@ -79,8 +79,8 @@ button:focus-visible {
   margin-top: 10px;
 }
 
-button {
-  margin-right: 10px;
+.prompt-button {
+  margin-right:15px;
 }
 
 .display{
