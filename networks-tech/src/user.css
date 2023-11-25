@@ -67,6 +67,7 @@ h4:hover{
     min-width: 30%;
     background-color: #213437;
     border-radius: 0.9rem;
+    padding: 5%;
 }
 @media (max-width : 800px) {
     .advert{
