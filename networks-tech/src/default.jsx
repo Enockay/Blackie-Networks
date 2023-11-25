@@ -13,7 +13,7 @@ const InitialOffer = () => {
       {!userInteracted && (
         <div className="offer-content" >
           <h2>Special Offer!!</h2>
-          <p className="item-1">1- DAY  package ksh 25 <button className="k-25"> Buy</button> </p>
+          <span className="item-2"> <p className='p'>1- DAY  package ksh=25 </p><button className="k-25"> Buy</button> </span>
           <p> WELCOME BONUS .Limited time upto date.</p>
           <button onClick={handleInteraction}>Explore More</button>
         </div>

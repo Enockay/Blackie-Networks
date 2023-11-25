@@ -117,13 +117,15 @@ h4:hover{
         max-width: fit-content;
     }
 }
-.k-20,.k-30,.k-10,.k-100,.k-50{
+.k-20,.k-30,.k-10,.k-100,.k-50,.k-25{
     margin-left: 15%;
     background-color:green;
     border-radius: 0.3rem;
     padding: 5%;
 
 }
+
+
 .item-1{
     display: flex;
     max-width: 80%;
@@ -132,6 +134,13 @@ h4:hover{
     padding: 5%;
     border-radius: 0.8rem;
     
+}
+.item-2{
+    display: flex;
+    background-color:wheat;
+    padding: 2%;
+    border-radius: 0.9rem;
+    color: #213437;
 }
 .cont1-2{
     display: flex;
