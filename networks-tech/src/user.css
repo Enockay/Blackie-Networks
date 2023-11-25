@@ -55,6 +55,7 @@ h4:hover{
 .packages{
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .advert{
@@ -71,10 +72,13 @@ h4:hover{
     .advert{
         font-size: 1.5rem;
     }
-
+    .container1{
+        display: none;
+    }
     
     .container2{
-        width: 60%;
+        width: 90%;
+        padding: 2%;
     }
     .container3{
         width: 95%;
@@ -92,7 +96,7 @@ h4:hover{
         background-color: #5e0ae6;
     }
     .item-1{
-        padding: 1%;
+        padding:2%;
         min-width: 90%;
         
     }
@@ -116,16 +120,18 @@ h4:hover{
 .k-20,.k-30,.k-10,.k-100,.k-50{
     margin-left: 15%;
     background-color:green;
-    border-radius: 0.2rem;
+    border-radius: 0.3rem;
+    padding: 5%;
 
 }
 .item-1{
     display: flex;
     max-width: 80%;
-    background-color: rgb(206, 206, 204);
+    background-color: white;
     color: black;
-    padding: 3%;
+    padding: 5%;
     border-radius: 0.8rem;
+    
 }
 .cont1-2{
     display: flex;
@@ -184,4 +190,9 @@ span{
       border-bottom: 9px solid green;
       border-right: 11px solid green;
     }
+  }
+  .p{
+    display: flex;
+    justify-self: flex-start;
+    place-content: start;
   }
