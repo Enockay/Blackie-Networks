@@ -1,7 +1,9 @@
+import InitialOffer from "./default";
 
 const Grant = () =>{
     return(
         <>
+         <InitialOffer/>
          <div className='packages'>
           <p id = "user" className='top-user1'>Name of top User </p>
           <p id = "user" className='top-user2'>name of second top user</p>

@@ -49,7 +49,7 @@ const LandingPage = () => {
         <div>
           <h2>Guide on how to Subscribe for wifi package </h2>
           <video
-            width="100%"
+            width="95%"
             height="auto"
             controls
             autoPlay

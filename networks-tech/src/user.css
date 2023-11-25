@@ -67,7 +67,8 @@ h4:hover{
     min-width: 30%;
     background-color: #213437;
     border-radius: 0.9rem;
-    padding: 5%;
+    padding: 1%;
+    max-height: 50%;
 }
 @media (max-width : 800px) {
     .advert{
@@ -82,8 +83,9 @@ h4:hover{
         padding: 2%;
     }
     .container3{
-        width: 95%;
+        width: 90%;
         min-height: 20rem;
+        padding: 5%;
     }
     .btn1,.btn2,.btn3,.btn4{
         box-shadow: azure;
@@ -177,7 +179,6 @@ span{
     color: #5e0ae6;
     padding: 5%;
     margin-top: 25%;
-   
     animation: fadeIn 3s ease-out infinite;
 }
 

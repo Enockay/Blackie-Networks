@@ -33,6 +33,7 @@ button {
   transition: border-color 0.25s;
   max-height: 4rem;
   border-radius: 0.7rem;
+  background-color: #5e0ae6;
 }
 button:hover {
   border-color: #646cff;
