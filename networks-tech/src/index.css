@@ -10,6 +10,17 @@
   -webkit-text-size-adjust: 100%;
   padding: 5%;
   position: relative;
+  opacity: 0;
+  animation : start 1s ease-in forwards;
+}
+
+@keyframes start{
+   from{
+    opacity: 0;
+   }
+   to {
+    opacity: 1;
+   }
 }
 
 a {
