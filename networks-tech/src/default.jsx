@@ -40,7 +40,8 @@ const InitialOffer = () => {
       {!userInteracted && (
         <div className="offer-content" >
           <h2>Special Offer!!</h2>
-          <span className="item-2"> <p className='p'>1- DAY  package ksh=25 </p><button className="k-25"onClick={()=>handlePurchase('1- DAY  package ksh=25')}> Buy</button> </span>
+          <span className="item-2"> <p className='p'>24hrs - package ksh=25 </p>
+          <button className="k-25"onClick={()=>handlePurchase('24hrs - package @ ksh=25')}> Buy</button> </span>
           <p> WELCOME BONUS .Limited time upto date.</p>
          { /*<button onClick={handleInteraction}>Exit Offer </button>*/}
         </div>
