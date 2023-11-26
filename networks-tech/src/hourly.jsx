@@ -57,7 +57,7 @@ const Hourly = () => {
         message={(
             <div>
             <p className='display'>{`confirm purchase ${selectedPackage}?`}</p>
-            <label >That Amount will be deducted from your M-pesa</label>
+            <label >That Amount will be deducted from your M-pesa Account</label>
           </div> 
         )}
       />

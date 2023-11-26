@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import CustomModal from './handlePurchase';
+let handleInteraction;
 
 const InitialOffer = () => {
   const [userInteracted, setUserInteracted] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
 
-  const handleInteraction = () => {
+     handleInteraction = () => {
     setUserInteracted(true);
 
   };
@@ -59,5 +60,5 @@ const InitialOffer = () => {
     </div>
   );
 };
-
+export {handleInteraction};
 export default InitialOffer;

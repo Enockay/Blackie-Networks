@@ -3,6 +3,7 @@ import Hourly from './hourly';
 import Weekly from './weekly';
 import Monthly from './monthly';
 import Grant from './grant';
+import { handleInteraction } from './default';
 
 let handleButtonClick;
 const ContentPackage = () => {
@@ -15,18 +16,22 @@ const ContentPackage = () => {
     let content ;
     
     if (button === 'btn1') {
+      handleInteraction();
       content = (
         <Hourly/>
       );
     } else if (button === 'btn2') {
+      handleInteraction();
       content = (
         <Weekly/>
       );
     } else if (button === 'btn3') {
+      handleInteraction();
       content = (
          <Monthly/>
       );
     } else if (button === 'btn4') {
+      handleInteraction();
       content = (
          <Grant/>
       );
