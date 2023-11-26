@@ -1,20 +1,24 @@
 import react,{useState} from "react"
 import CustomModal from "./handlePurchase";
+import Procceed from "./procceed";
 
 const Weekly = () =>{
     const [selectedPackage,setSelectedPackage] = useState(null);
     const [showModal,setShowModal] = useState(false);
+    const [procced,setProcced] = useState(false);
     
     const handleButtonClick = () =>{
         setShowModal(true);
     };
     const handleConfirm = () =>{
         //logic
+        setProcced(true);
         setShowModal(false);
     }
 
     const handleCancel = () =>{
         //logic
+        setProcced(false);
         setShowModal(false);
     }
 
@@ -54,6 +58,10 @@ const Weekly = () =>{
                 <label>That Amount will be deducted from your M-pesa Account</label>
             </div>
           )}
+          />
+          <Procceed
+          isOpen={procced}
+          onCancel={handleCancel}
           />
         </>
     )

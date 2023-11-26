@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import CustomModal from './handlePurchase';
+import Procceed from './procceed';
 let handleInteraction;
 
 const InitialOffer = () => {
   const [userInteracted, setUserInteracted] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [selectedPackage, setSelectedPackage] = useState(null);
+  const [procced,setProcced] = useState(false);
 
      handleInteraction = () => {
     setUserInteracted(true);
@@ -19,12 +21,14 @@ const InitialOffer = () => {
     // Perform the action you want to confirm
     console.log('Confirmed!');
     // Close the modal
+    setProcced(true);
     setShowModal(false);
   };
 
   const handleCancel = () => {
     // Cancel the action or simply close the modal
     console.log('Canceled!');
+    setProcced(false);
     setShowModal(false);
   };
 
@@ -57,7 +61,11 @@ const InitialOffer = () => {
             <label >That Amount will be deducted from your M-pesa Account</label>
           </div> 
         )}
-      /> 
+      />
+      <Procceed
+      isOpen={procced} 
+      onCancel={handleCancel}
+      />
     </div>
   );
 };

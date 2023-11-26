@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import CustomModal from './handlePurchase';
+import Procceed from './procceed';
 
 const Hourly = () => {
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [procced, setProcced] = useState(false);
 
   const handleButtonClick = () => {
     setShowModal(true);
@@ -13,12 +15,14 @@ const Hourly = () => {
     // Perform the action you want to confirm
     console.log('Confirmed!');
     // Close the modal
+    setProcced(true);
     setShowModal(false);
   };
 
   const handleCancel = () => {
     // Cancel the action or simply close the modal
     console.log('Canceled!');
+    setProcced(false)
     setShowModal(false);
   };
 
@@ -60,6 +64,10 @@ const Hourly = () => {
             <label >That Amount will be deducted from your M-pesa Account</label>
           </div> 
         )}
+      />
+      <Procceed
+      isOpen={procced}
+      onCancel={handleCancel}
       />
     </>
   );
