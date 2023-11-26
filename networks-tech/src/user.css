@@ -47,6 +47,7 @@ h4:hover{
     max-width: 50%;
     justify-content: center;
     align-items: center;
+    max-height: 30rem;
 }
 .container2{
     min-width: 50%;
@@ -68,7 +69,7 @@ h4:hover{
     background-color: #213437;
     border-radius: 0.9rem;
     padding: 1%;
-    max-height: 50%;
+    max-height:30rem;
 }
 @media (max-width : 800px) {
     .advert{
@@ -118,6 +119,11 @@ h4:hover{
     }
     .heading{
         max-width: fit-content;
+        
+    }
+    img{
+        max-width: 80px;
+        height: auto;
     }
 }
 .k-20,.k-30,.k-10,.k-100,.k-50,.k-25{
@@ -149,6 +155,7 @@ h4:hover{
     display: flex;
     gap: 2%;
     min-width: 60%;
+    padding: 1%;
     
 }
 span{

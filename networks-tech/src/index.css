@@ -2,7 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(to right, #2ae205,#ff0095);
+  background:darkblue;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -11,12 +11,12 @@
   padding: 5%;
   position: relative;
   opacity: 0;
-  animation : start 1s ease-in forwards;
+  animation : start 2s ease-in forwards;
 }
 
 @keyframes start{
    from{
-    opacity: 0;
+    opacity: -1;
    }
    to {
     opacity: 1;
