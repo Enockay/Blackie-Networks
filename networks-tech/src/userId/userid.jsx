@@ -6,7 +6,7 @@ const User = () => {
 
   const handleInputChange = (event) => {
     setPhoneNumber(event.target.value);
-    setWarning(''); // Clear the warning when the user starts typing
+    setWarning('start 2457'); // Clear the warning when the user starts typing
   };
 
   const checkBox = () => {
