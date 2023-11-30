@@ -99,3 +99,12 @@ button:focus-visible {
   font-size: 0.9rem;
   font-weight: 500;
 }
+.number{
+  border-radius: 0.3rem;
+  background: #535bf2;
+  font-size: 0.9rem;
+}
+.input{
+  display: flex;
+  gap: 2%;
+}

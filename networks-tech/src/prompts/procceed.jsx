@@ -1,3 +1,4 @@
+import User from "../userId/userid"
 
 const Procceed = ({isOpen,onCancel}) => {
     return (
@@ -5,9 +6,10 @@ const Procceed = ({isOpen,onCancel}) => {
         { isOpen && (
             <div className="modal-overlay">
                 <div className="modal">
-                    <p>Thankyou for chosing to work with blackie Networks wait for STK prompt Enter your mpesa pin
+                    <p>Thankyou for chosing to work with blackie Networks  Enter your mpesa-number  below
                         We value Our Client.
                     </p>
+                        <User/>
                     <div className="button-container">
                         <button className="prompt-button" onClick={onCancel}>Close</button>
                     </div>
