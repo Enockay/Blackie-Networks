@@ -108,3 +108,8 @@ button:focus-visible {
   display: flex;
   gap: 2%;
 }
+
+.warning{
+  color:red;
+  font-size: 0.6rem;
+}
