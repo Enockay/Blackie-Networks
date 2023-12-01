@@ -10,7 +10,7 @@ const User = () => {
   };
 
   const checkBox = () => {
-    if (phoneNumber.length < 12) {
+    if (phoneNumber.length < 12 ||phoneNumber.length >12) {
       setWarning('Please enter a valid phone number with at least 12 digits.');
     } else {
        fetch("",{
