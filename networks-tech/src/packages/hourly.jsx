@@ -36,20 +36,20 @@ const Hourly = () => {
   return (
     <>
       <div className='packages'>
-        <span className="item-1"><p className='p'>30-min package ksh=10</p>
-         <button className="k-10" onClick={() => handlePurchase('30-min package ksh=10')}> 
+        <span className="item-1"><p className='p'>30-min package ksh=5</p>
+         <button className="k-10" onClick={() => handlePurchase('30-min package ksh=5')}> 
          Buy</button> </span>
-        <span className="item-1"><p className='p' >1-hour package ksh=20</p>
-         <button className="k-20"onClick={() => handlePurchase('1-hour package ksh=20')}>
+        <span className="item-1"><p className='p' >1-hour package ksh=7</p>
+         <button className="k-20"onClick={() => handlePurchase('1-hour package ksh=7')}>
              Buy</button> </span>
-        <span className="item-1"><p className='p'>2-hour package ksh=30</p> 
-        <button className="k-30"onClick={() => handlePurchase('2-hours package ksh=30')}>
+        <span className="item-1"><p className='p'>2-hour package ksh=12</p> 
+        <button className="k-30"onClick={() => handlePurchase('2-hours package ksh=12')}>
              Buy</button> </span>
-        <span className="item-1"><p className='p'>3-hour package ksh=50 </p>
-        <button className="k-50"onClick={() => handlePurchase('3-hours package ksh=50')}>
+        <span className="item-1"><p className='p'>3-hour package ksh=15 </p>
+        <button className="k-50"onClick={() => handlePurchase('3-hours package ksh=15')}>
              Buy</button> </span>
-        <span className="item-1"><p className='p'>6-hour package ksh=100 </p>
-        <button className="k-100"onClick={() => handlePurchase('6-hours package ksh=100')}>
+        <span className="item-1"><p className='p'>6-hour package ksh=18 </p>
+        <button className="k-100"onClick={() => handlePurchase('6-hours package ksh=18')}>
             Buy</button> </span>
       </div>
 

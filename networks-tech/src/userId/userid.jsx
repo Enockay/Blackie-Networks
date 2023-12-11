@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DataComponent from '../clientApis/postNum';
 
 const User = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -13,22 +14,7 @@ const User = () => {
     if (phoneNumber.length < 12 ||phoneNumber.length >12) {
       setWarning('Please enter a valid phone number with at least 12 digits.');
     } else {
-       fetch("",{
-        method: 'post',
-        header :{
-            'Content-type' : 'application\json',
-        },
-        body :JSON.stringify({phoneNumber}),
-       })
-       .then((response) => response.json())
-       .then((data)=>{
-        console.log('server response:',data);
-       })
-       .catch((error)=>{
-        console.log(`server responded with ${error}`)
-       })
-
-      setWarning(''); 
+      
     }
   };
 
