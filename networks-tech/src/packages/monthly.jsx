@@ -31,17 +31,17 @@ const Monthly = () =>{
           <span className="item-1"><p className='p'>20 days package ksh=400</p> 
           <button className="k-10"onClick={() => handlePurchase('20 days package @ ksh=400')}> Buy</button>
            </span>
-          <span className="item-1"><p className='p'>30 days package ksh=600 </p>
-          <button className="k-20"onClick={() => handlePurchase('30 days package @ ksh=600')}> Buy</button>
+          <span className="item-1"><p className='p'>31 days package ksh=600 </p>
+          <button className="k-20"onClick={() => handlePurchase('31 days package @ ksh=600')}> Buy</button>
            </span>
           <span className="item-1"><p className='p'>10 days package ksh=300 </p>
-          <button className="k-30"onClick={()=> handlePurchase('10days package @ ksh=300')}> Buy</button> 
+          <button className="k-30"onClick={()=> handlePurchase('10 days package @ ksh=300')}> Buy</button> 
           </span>
           <span className="item-1"><p className='p'>28 days package ksh=500 </p>
-          <button className="k-50"onClick={()=> handlePurchase('21 days package @ksh=500')}> Buy</button>
+          <button className="k-50"onClick={()=> handlePurchase('28 days package @ksh=500')}> Buy</button>
           </span>
           <span className="item-1"><p className='p'>15 days package ksh=350</p>
-          <button className="k-100"onClick={()=> handlePurchase('28 days package @ ksh=1000')}>Buy</button>
+          <button className="k-100"onClick={()=> handlePurchase('15 days package @ ksh=350')}>Buy</button>
           </span>
         </div>
         {selectedPackage}
