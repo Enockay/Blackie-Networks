@@ -1,6 +1,7 @@
 import react,{useState} from "react"
 import CustomModal from "../prompts/handlePurchase";
 import Procceed from "../prompts/procceed";
+import handlePurchase from "../App";
 
 const Weekly = () =>{
     const [selectedPackage,setSelectedPackage] = useState(null);
@@ -22,32 +23,37 @@ const Weekly = () =>{
         setShowModal(false);
     }
 
-    const handlePurchase = (packageLable) => {
-        handleButtonClick();
-        setSelectedPackage(packageLable);
-    }
-     
-
+   
     return(
         <>
          <div className='packages'>
           <span className="item-1"><p className='p'>2 days package ksh=70</p>
-           <button className="k-10"onClick={()=> handlePurchase('2 days package @ ksh=50')}> Buy</button>
+           <button className="k-10"onClick={()=> handlePurchase('2 days package @ ksh=50', setProcced, setShowModal,
+            handleButtonClick, setSelectedPackage)}> Buy</button>
             </span>
+
           <span className="item-1"><p className='p'>3 days package ksh=90 </p>
-          <button className="k-20"onClick={()=> handlePurchase('3 days package @ ksh=70')}> Buy</button> 
+          <button className="k-20"onClick={()=> handlePurchase('3 days package @ ksh=70', setProcced, setShowModal,
+           handleButtonClick, setSelectedPackage)}> Buy</button> 
           </span>
+
           <span className="item-1"><p className='p'>7 days package ksh=150</p>
-           <button className="k-30" onClick={()=>handlePurchase('7 days package @ ksh=150')}> Buy</button> 
+           <button className="k-30" onClick={()=>handlePurchase('7 days package @ ksh=150', setProcced, setShowModal, 
+           handleButtonClick, setSelectedPackage)}> Buy</button> 
            </span>
+           
           <span className="item-1"><p className='p'>10 days package ksh=250 </p>
-          <button className="k-50"onClick={()=> handleButtonClick('10 days package @ ksh=250')}> Buy</button>
+          <button className="k-50"onClick={()=> handleButtonClick('10 days package @ ksh=250', setProcced, setShowModal,
+           handleButtonClick, setSelectedPackage)}> Buy</button>
            </span>
+
           <span className="item-1"><p className='p'>14 days package ksh=300 </p>
-          <button className="k-100"onClick = {()=> handleButtonClick('14 days package @ ksh=300')}>Buy</button>
+          <button className="k-100"onClick = {()=> handleButtonClick('14 days package @ ksh=300', setProcced, setShowModal,
+           handleButtonClick, setSelectedPackage)}>Buy</button>
           </span>
+          
         </div>
-        {selectedPackage}
+        
          <CustomModal
           isOpen={showModal}
           onCancel={handleCancel}

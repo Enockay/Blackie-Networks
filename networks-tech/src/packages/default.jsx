@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import CustomModal from '../prompts/handlePurchase';
 import Procceed from '../prompts/procceed';
+import handlePurchase from '../App';
+
 let handleInteraction;
 
 const InitialOffer = () => {
@@ -33,24 +35,21 @@ const InitialOffer = () => {
   };
 
 
-  const handlePurchase = (packageLabel) => {
-   
-    handleButtonClick();
-    setSelectedPackage(packageLabel);
-  };
-
   return (
     <div className={`inital-offer ${userInteracted ? 'hidden' : 'animate'}`} >
       {!userInteracted && (
         <div className="offer-content" >
           <h2>Special Offer!!</h2>
+
           <span className="item-2"> <p className='p'>24hrs - package ksh=30 </p>
-          <button className="k-25"onClick={()=>handlePurchase('24hrs - package @ ksh=30')}> Buy</button> </span>
+          <button className="k-25"onClick={()=>handlePurchase('1-hour package ksh=30', setProcced, setShowModal,
+          handleButtonClick, setSelectedPackage)}> Buy</button> </span>
+
           <p> WELCOME BONUS .Limited time upto date.</p>
          { /*<button onClick={handleInteraction}>Exit Offer </button>*/}
         </div>
       )}
-      {selectedPackage}
+      
      <CustomModal
         isOpen={showModal}
         onConfirm={handleConfirm}

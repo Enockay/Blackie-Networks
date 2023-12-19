@@ -5,6 +5,7 @@ import Monthly from './monthly';
 import Grant from './grant';
 import { handleInteraction } from './default';
 
+
 let handleButtonClick;
 const ContentPackage = () => {
   const [selectedButton, setSelectedButton] = useState(null);
@@ -47,6 +48,7 @@ const ContentPackage = () => {
         {/* Display the loaded content when a button is selected */}
         {selectedButton && loadedContent}
         <h3>Thanks for choosing to work with us </h3>
+        
       
     </>
     

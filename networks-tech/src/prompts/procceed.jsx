@@ -1,4 +1,4 @@
-import User from "../userId/userid"
+import User from "../userId/userid";
 
 const Procceed = ({isOpen,onCancel}) => {
     return (
