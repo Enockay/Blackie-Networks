@@ -15,16 +15,17 @@ const PaymentButton = ({ phone }) => {
       const phoneNumber = phone;
       const Amount = amount; // Replace with the actual amount
       const orderId = '123456'; // Replace with a unique order ID
-      const response = await fetch('http://localhost:3000/api/makePayment', {
+      const response = await fetch('https://a8b1-102-213-241-164.ngrok-free.app/api/makePayment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ phoneNumber, Amount, orderId }),
-        
+    
       });
 
       const data = await response.json();
+      console.log(`${Amount},${phoneNumber}`);
 
       // Handle the payment response from the backend
       setPaymentStatus(data.success ? 'Payment successful' : 'Payment failed');
