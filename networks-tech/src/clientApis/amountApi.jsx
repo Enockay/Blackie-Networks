@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 
-import { amount } from '../App';
+import { amount,allocatedTime } from '../App';
 
 const PaymentButton = ({ phone }) => {
   const [paymentStatus, setPaymentStatus] = useState(null);
@@ -14,21 +14,20 @@ const PaymentButton = ({ phone }) => {
       // Replace with the actual details (phone number, amount, etc.)
       const phoneNumber = phone;
       const Amount = amount; // Replace with the actual amount
-      const orderId = '123456'; // Replace with a unique order ID
-      const response = await fetch('https://a8b1-102-213-241-164.ngrok-free.app/api/makePayment', {
+      const response = await fetch("https://2c24-105-166-109-175.ngrok-free.app/api/makePayment", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ phoneNumber, Amount, orderId }),
-    
+        body: JSON.stringify({ phoneNumber, Amount,allocatedTime}),
+       
       });
 
       const data = await response.json();
-      console.log(`${Amount},${phoneNumber}`);
-
+      console.log(allocatedTime);
       // Handle the payment response from the backend
-      setPaymentStatus(data.success ? 'Payment successful' : 'Payment failed');
+        
+      setPaymentStatus(data.success ? 'Payment successfully processed Confirm ' : 'Payment failed');
     } catch (error) {
       console.error('Error initiating payment:', error);
       setPaymentStatus('Payment failed');

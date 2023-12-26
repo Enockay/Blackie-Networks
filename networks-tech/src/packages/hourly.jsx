@@ -38,7 +38,7 @@ const Hourly = () => {
          Buy</button> </span>
 
         <span className="item-1"><p className='p' >1-hour package ksh=7</p>
-         <button className="k-20"onClick={() => handlePurchase('1-hour package ksh=7', setProcced, setShowModal,
+         <button className="k-20"onClick={() => handlePurchase('1-hours package ksh=7', setProcced, setShowModal,
           handleButtonClick, setSelectedPackage)}>
              Buy</button> </span>
 

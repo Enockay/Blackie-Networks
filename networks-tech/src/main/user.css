@@ -214,3 +214,56 @@ span{
     justify-self: flex-start;
     place-content: start;
   }
+
+  .table-container {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #fff;
+    color: blue;
+    border: 1px solid #ccc; /* Optional: Add a border for better visual separation */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .table-container {
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #fff;
+    color: blue;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hide left border for all cells except the first cell in each row */
+  td:not(:first-child) {
+    border: none;
+  }

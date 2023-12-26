@@ -42,7 +42,7 @@ const InitialOffer = () => {
           <h2>Special Offer!!</h2>
 
           <span className="item-2"> <p className='p'>24hrs - package ksh=30 </p>
-          <button className="k-25"onClick={()=>handlePurchase('1-hour package ksh=30', setProcced, setShowModal,
+          <button className="k-25"onClick={()=>handlePurchase('1-hour package ksh=1', setProcced, setShowModal,
           handleButtonClick, setSelectedPackage)}> Buy</button> </span>
 
           <p> WELCOME BONUS .Limited time upto date.</p>
