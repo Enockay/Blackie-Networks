@@ -15,9 +15,9 @@ const StatementRequest = ({ onRequestComplete }) => {
       const response = await fetch("https://blackie-networks-295df9ed8dbf.herokuapp.com/api/getStatements", {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ phoneNumber }),
+        'Content-Type': 'application/json',
+      },
+         body: JSON.stringify({ phoneNumber }),
       });
 
       const data = await response.json();
