@@ -23,7 +23,7 @@ const PaymentButton = ({ phone }) => {
       });
       
       const data = await response.json();
-      console.log(allocatedTime);
+    //  console.log(allocatedTime);
       // Handle the payment response from the backend
         
       setPaymentStatus(data.success ? 'Payment successfully processed Confirm ' : 'Payment failed');

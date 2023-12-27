@@ -16,8 +16,8 @@ const handlePurchase = (packageLabel, setProcced, setShowModal, handleButtonClic
   } : null;
 
   // Log extracted data (for illustration purposes)
-  console.log('Amount:', amount);
-  console.log('Allocated Time:', allocatedTime);
+  //console.log('Amount:', amount);
+  //console.log('Allocated Time:', allocatedTime);
 
   // Your existing logic here
   handleButtonClick();
