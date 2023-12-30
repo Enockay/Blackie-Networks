@@ -125,6 +125,9 @@ h4:hover{
         max-width: 80px;
         height: auto;
     }
+    .items{
+        margin-top: 2rem;
+    }
 }
 .k-20,.k-30,.k-10,.k-100,.k-50,.k-25{
     margin-left: 15%;
@@ -266,4 +269,9 @@ span{
   /* Hide left border for all cells except the first cell in each row */
   td:not(:first-child) {
     border: none;
+  }
+  #package1{
+    background-color: cornflowerblue;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
   }

@@ -15,8 +15,10 @@ const ContentPackage = () => {
 
  handleButtonClick = (button) => {
     let content ;
-    
-    if (button === 'btn1') {
+   if(button === 'btn5'){
+      handleInteraction();
+   }
+    else if  (button === 'btn1') {
       handleInteraction();
       content = (
         <Hourly/>

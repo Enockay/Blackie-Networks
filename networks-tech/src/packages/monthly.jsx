@@ -60,8 +60,9 @@ const Monthly = () =>{
         onConfirm={handleConfirm}
         message={(
             <div>
-              <p className='display'>{`Confirm purchase ${selectedPackage}?`}</p>
+              <p className='display'>{`Confirm purchase ${selectedPackage}?`}
               <label>That Amount will be deducted from your M-pesa Account</label>
+              </p>
             </div>
         )}
         />

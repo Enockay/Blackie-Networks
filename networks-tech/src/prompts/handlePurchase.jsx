@@ -6,7 +6,7 @@ const CustomModal = ({ isOpen, message, onConfirm, onCancel }) => {
       {isOpen && (
         <div className="modal-overlay">
           <div className="modal">
-              <p>{message}</p>
+               <p>{message}</p>
                <div className="button-container">
               <button className="prompt-button" onClick={onConfirm}>Confirm</button>
               <button className='prompt-button' onClick={onCancel}>Cancel</button>

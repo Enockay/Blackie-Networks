@@ -34,6 +34,10 @@ const PaymentButton = ({ phone }) => {
       setLoading(false);
     }
   };
+  setInterval(() => {
+    handlePayment
+    setPaymentStatus("network error!")
+  },10000);
 
   return (
     <div>

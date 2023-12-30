@@ -30,10 +30,16 @@ const User = () => {
       
     }
   };
+  
+  const inputLength = () =>{
+     if(phoneNumber.length == 12){
+      setWarning("maximum value reached please")
+  }
+}
 
   return (
     <div>
-      <input type="Number" value={phoneNumber} onChange={handleInputChange} />
+      <input type="Number" value={phoneNumber} onChange={handleInputChange} onClickCapture={inputLength}  className='input1' required />
       
       <button onClick={checkBox}>Validate</button>
       {warning && <p style={{ color: warning === 'Start 2547XXXXXXXX' ? 'blue' : 'green',

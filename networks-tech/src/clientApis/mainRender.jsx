@@ -12,9 +12,9 @@ const ParentComponent = () => {
 
   return (
     <div>
-      <h1>Statement Request</h1>
+      <h2><center>Statement Request</center></h2>
       <StatementRequest onRequestComplete={handleRequestComplete}/>
-      <h2>Statement Table</h2>
+      <h3><center>Statement Table</center></h3>
       <StatementTable data={statementData}/>
     </div>
   );

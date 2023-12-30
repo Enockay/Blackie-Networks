@@ -5,10 +5,10 @@ import ParentComponent from "../clientApis/mainRender";
 const Grant = () =>{
     return(
         <>
-         <InitialOffer/>
-         <div className='packages'>
+         <div className='packages'id="package1">
             <ParentComponent/>
         </div>
+        <InitialOffer/>
         </>
     )
 }

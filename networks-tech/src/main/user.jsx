@@ -27,10 +27,12 @@ function Design(){
             </div>
        </div>
        <div className='items'>
+           <button className='btn4'onClick={() => handleButtonClick('btn5')}><h4>Login Details </h4></button>
            <button className='btn1'onClick={() => handleButtonClick('btn1')}><h4>Hourly Packages</h4></button> 
            <button className='btn2'onClick={() => handleButtonClick('btn2')}><h4>Weekly Packages</h4></button>
            <button className='btn3'onClick={() => handleButtonClick('btn3')}><h4>Monthly Packages</h4></button>
-           <button className='btn4'onClick={() => handleButtonClick('btn4')}><h4>Offers && Grant </h4></button>
+           <button className='btn4'onClick={() => handleButtonClick('btn4')}><h4>package States </h4></button>
+
        </div>
        
        </div>
