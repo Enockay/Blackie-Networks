@@ -109,6 +109,9 @@ h4:hover{
       gap:3px;
       flex-direction: column;
     }
+    #package1{
+        padding: 0.3rem;
+    }
     .advertise{
         display: flex;
         flex-direction: column;
@@ -273,5 +276,5 @@ span{
   #package1{
     background-color: cornflowerblue;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 2rem;
   }
