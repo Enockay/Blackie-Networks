@@ -6,7 +6,7 @@ const ParentComponent = () => {
   const [statementData, setStatementData] = useState([]);
 
   const handleRequestComplete = (data) => {
-    console.log('Request complete:', data);
+  //  console.log('Request complete:', data);
     setStatementData(data);
   };
 

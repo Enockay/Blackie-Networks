@@ -33,7 +33,7 @@ const User = () => {
 
   return (
     <div>
-      <input type="text" value={phoneNumber} onChange={handleInputChange} />
+      <input type="Number" value={phoneNumber} onChange={handleInputChange} />
       
       <button onClick={checkBox}>Validate</button>
       {warning && <p style={{ color: warning === 'Start 2547XXXXXXXX' ? 'blue' : 'green',

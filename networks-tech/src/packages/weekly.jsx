@@ -12,13 +12,13 @@ const Weekly = () =>{
         setShowModal(true);
     };
     const handleConfirm = () =>{
-        //logic
+        
         setProcced(true);
         setShowModal(false);
     }
 
     const handleCancel = () =>{
-        //logic
+        
         setProcced(false);
         setShowModal(false);
     }

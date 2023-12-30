@@ -15,7 +15,7 @@ const Hourly = () => {
 
   const handleConfirm = () => {
     // Perform the action you want to confirm
-    console.log('Confirmed!');
+   // console.log('Confirmed!');
     // Close the modal
     setProcced(true);
     setShowModal(false);
@@ -23,7 +23,7 @@ const Hourly = () => {
 
   const handleCancel = () => {
     // Cancel the action or simply close the modal
-    console.log('Canceled!');
+   // console.log('Canceled!');
     setProcced(false)
     setShowModal(false);
   };
