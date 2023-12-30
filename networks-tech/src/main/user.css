@@ -26,7 +26,9 @@ img{
     margin-top: 5%;
     max-width: 20%;
 }
-
+.network-head{
+    color: rgb(128, 94, 0);
+}
 h4{
     cursor: pointer;
     transition: transform;
@@ -34,6 +36,7 @@ h4{
 }
 h4:hover{
     color: rgb(128, 94, 0);
+    
 }
 .main{
     margin-top: 3%;

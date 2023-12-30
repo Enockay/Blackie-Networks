@@ -15,7 +15,7 @@ function Design(){
             <p className='para'><img src= {logo} alt="logo"/>
             <h3>Best services First</h3></p>
             <div className='head1'>
-            <h4 class="">NETWORK AT LOW PRICE FOR COMRADES</h4>
+            <h4 class="network-head">NETWORK AT LOW PRICE FOR COMRADES</h4>
             <h5 className='contact'>Whatsapp Me : 0740629611</h5>
             </div>
             <div class = "advertise">
