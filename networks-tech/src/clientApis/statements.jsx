@@ -51,6 +51,7 @@ const StatementRequest = ({ onRequestComplete }) => {
           type="text"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
+          className='input1'
         />
       </label>
       {warn && <p style={{ color: warn === 'Start 2547XXXXXXXX' ? 'white' : 'red',
