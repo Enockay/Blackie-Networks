@@ -43,6 +43,10 @@ const StatementRequest = ({ onRequestComplete }) => {
     setWarning('Start 2547XXXXXXXX');
   };
 
+  const handleOrderChange = (event) => {
+    setOrderId(event.target.value);
+  }
+
   const checkBox = () => {
     if (phoneNumber.length !== 12 ) {
       setWarning('Please enter a valid phone number with 12 digits.');
@@ -84,7 +88,7 @@ const StatementRequest = ({ onRequestComplete }) => {
          type = "text"
          value = {orderId}
          className='input1'
-         onChange={(e) =>setOrderId(e.target.value)}
+         onChange={handleOrderChange}
          ></input>
       </label>
 
