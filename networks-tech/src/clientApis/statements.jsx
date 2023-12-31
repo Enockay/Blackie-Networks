@@ -19,7 +19,7 @@ const StatementRequest = ({ onRequestComplete }) => {
         headers: {
         'Content-Type': 'application/json',
       },
-         body: JSON.stringify({ phoneNumber }),
+         body: JSON.stringify({ phoneNumber,orderId }),
       });
 
       const data = await response.json();

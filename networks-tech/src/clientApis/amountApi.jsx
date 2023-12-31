@@ -34,11 +34,11 @@ const PaymentButton = ({ phone }) => {
       setLoading(false);
     }
   };
-  setInterval(() => {
+ /* setInterval(() => {
     handlePayment
     setPaymentStatus("network error!")
   },10000);
-
+*/
   return (
     <div>
       <button onClick={handlePayment} disabled={isLoading}>
