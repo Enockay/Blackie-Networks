@@ -23,11 +23,11 @@ const StatementRequest = ({ onRequestComplete }) => {
       });
 
       const data = await response.json();
-      console.log(data);
-     setData(data);
+      //console.log(data);
+       setData(data);
       onRequestComplete(data);
 
-      if(data.length < 20){
+      if(data.length < 20 ){
         setOrderWarn(data.statements);
 
       }
@@ -64,6 +64,7 @@ const StatementRequest = ({ onRequestComplete }) => {
       
     }
   };
+  console.log(orderId);
 
   return (
     <div className='statement-form'>
