@@ -47,8 +47,8 @@ const StatementRequest = ({ onRequestComplete }) => {
     }
      else {
       handleStatementRequest();
-      setOrderWarn('wait for the statements')
       setTimeout(() => {
+        setOrderWarn('wait for the statements')
         setWarning('');
         setOrderWarn('');
       },5000 );
