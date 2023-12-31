@@ -25,7 +25,7 @@ const StatementRequest = ({ onRequestComplete }) => {
       const data = await response.json();
       //console.log(data);
        setData(data);
-      onRequestComplete(data);
+       onRequestComplete(data);
 
       if(data.length < 20 ){
         setOrderWarn(data.statements);
@@ -87,10 +87,10 @@ const StatementRequest = ({ onRequestComplete }) => {
          Your Passcode:
          <input 
          type = "text"
-         value = {Order_Id}
+         value ={Order_Id}
          className='input1'
          onChange={handleOrderChange}
-         ></input>
+        />
       </label>
 
        {orderWarn && <p style={{color: orderWarn === 'fill the passcode field' ? 'white' : 'green',
