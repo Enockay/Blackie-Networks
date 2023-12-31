@@ -23,7 +23,7 @@ const StatementRequest = ({ onRequestComplete }) => {
       });
 
       const data = await response.json();
-      //console.log(data);
+      console.log(data);
        setData(data);
        onRequestComplete(data);
 
