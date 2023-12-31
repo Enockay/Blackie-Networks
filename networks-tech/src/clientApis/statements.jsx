@@ -26,8 +26,10 @@ const StatementRequest = ({ onRequestComplete }) => {
       console.log(data);
      setData(data);
       onRequestComplete(data);
-      if(data.length < 2){
-        setWarning(data.statements);
+
+      if(data.length < 20){
+        setOrderWarn(data.statements);
+
       }
     } catch (error) {
       setOrderWarn('Error requesting statements:', error);
