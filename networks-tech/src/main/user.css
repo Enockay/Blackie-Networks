@@ -286,3 +286,16 @@ span{
     border-radius: 0.5rem;
     padding: 2rem;
   }
+ /* .passcode{
+    margin-top: 3%;
+  }
+  */
+  .statement-form{
+    display: flex;
+    flex-direction:column;
+    gap: 5%;
+  }
+  .getStatementB{
+    max-width: 6rem;
+    margin-top: 3%;
+  }
