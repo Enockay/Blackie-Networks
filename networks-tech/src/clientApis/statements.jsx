@@ -3,7 +3,7 @@ import StatementTable from './renderStatement.jsx';
 
 const StatementRequest = ({ onRequestComplete }) => {
   const [phoneNumber, setPhoneNumber] = useState('');
-  const [orderId, setOrderId] = useState('');
+  const [Order_Id, setOrderId] = useState('');
   const [isLoading, setLoading] = useState(false);
   const [receivedData,setData]  = useState(true);
   const [warn, setWarning] = useState('');
@@ -19,7 +19,7 @@ const StatementRequest = ({ onRequestComplete }) => {
         headers: {
         'Content-Type': 'application/json',
       },
-         body: JSON.stringify({ phoneNumber,orderId }),
+         body: JSON.stringify({ phoneNumber,Order_Id}),
       });
 
       const data = await response.json();
@@ -50,7 +50,7 @@ const StatementRequest = ({ onRequestComplete }) => {
   const checkBox = () => {
     if (phoneNumber.length !== 12 ) {
       setWarning('Please enter a valid phone number with 12 digits.');
-    }else if (orderId.length < 4){
+    }else if (Order_Id.length < 4){
       setWarning('');
       setOrderWarn('This field should be filled or not correctly filled');
     }
@@ -64,7 +64,7 @@ const StatementRequest = ({ onRequestComplete }) => {
       
     }
   };
-  console.log(orderId);
+  //console.log(Order_Id);
 
   return (
     <div className='statement-form'>
@@ -87,7 +87,7 @@ const StatementRequest = ({ onRequestComplete }) => {
          Your Passcode:
          <input 
          type = "text"
-         value = {orderId}
+         value = {Order_Id}
          className='input1'
          onChange={handleOrderChange}
          ></input>
