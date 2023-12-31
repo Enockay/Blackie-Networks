@@ -27,7 +27,7 @@ const StatementRequest = ({ onRequestComplete }) => {
        setData(data);
        onRequestComplete(data);
 
-      if(data.length < 20 ){
+      if(data.length < 0 ){
         setOrderWarn(data.statements);
 
       }
