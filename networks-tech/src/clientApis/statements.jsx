@@ -50,6 +50,7 @@ const StatementRequest = ({ onRequestComplete }) => {
       setOrderWarn('wait for the statements')
       setTimeout(() => {
         setWarning('');
+        setOrderWarn('');
       },5000 );
       
     }
