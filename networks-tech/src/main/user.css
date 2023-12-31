@@ -81,6 +81,9 @@ h4:hover{
     .container1{
         display: none;
     }
+    :root{
+        border: 4px solid white;
+    }
     
     .container2{
         width: 90%;
