@@ -63,6 +63,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .loginPage{
+    min-width: 70%;
+  }
 }
 .modal-overlay {
   position: fixed;
@@ -137,4 +140,5 @@ button:focus-visible {
 }
 .h32{
   text-decoration: underline;
+  text-align: center;
 }
