@@ -299,3 +299,8 @@ span{
     max-width: 6rem;
     margin-top: 3%;
   }
+  .statmentInfo{
+    font-size: 1.5rem;
+    color : blue;
+    font-family: 'Times New Roman', Times, serif;
+  }

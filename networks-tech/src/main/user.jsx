@@ -5,6 +5,7 @@ import LandingPage from './vedioplayer';
 import ContentPackage from '../packages/packages';
 import { handleButtonClick } from '../packages/packages';
 import InitialOffer from '../packages/default';
+import LoginPage from '../packages/login';
 
 
 function Design(){

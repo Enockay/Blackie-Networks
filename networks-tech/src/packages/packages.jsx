@@ -4,6 +4,7 @@ import Weekly from './weekly';
 import Monthly from './monthly';
 import Grant from './grant';
 import { handleInteraction } from './default';
+import LoginPage from './login';
 
 
 let handleButtonClick;
@@ -17,6 +18,9 @@ const ContentPackage = () => {
     let content ;
    if(button === 'btn5'){
       handleInteraction();
+      content = (
+      <LoginPage/>
+      )
    }
     else if  (button === 'btn1') {
       handleInteraction();

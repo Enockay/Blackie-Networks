@@ -122,3 +122,19 @@ button:focus-visible {
 .input1:focus{
   border: 0.2rem solid green;
 }
+.loginPage{
+   display: flex;
+   flex-direction:column;
+   gap:0.7rem;
+   justify-content: center;
+   align-self: center;
+   padding: 15%;
+   margin-left: 1.5rem;
+   background-color: #243724;
+   max-width:60%;
+   min-height: 50%;
+   border-radius: 0.9rem;
+}
+.h32{
+  text-decoration: underline;
+}
