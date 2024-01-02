@@ -44,8 +44,9 @@ function Design(){
                <h2 className='advert'>BRINGING NETWORK AT LOWER PRICE FASTER THAN YOU CAN THINK.</h2>
           </div>
            <div className='container2'> 
+           <LoginPage/>
            <InitialOffer/>
-        <ContentPackage/>
+           <ContentPackage/>
           </div>
        </div>
        <div className='container3'>

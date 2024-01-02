@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CustomModal from '../prompts/handlePurchase';
 import Procceed from '../prompts/procceed';
 import handlePurchase from '../App';
+import LoginPage from './login';
 
 let handleInteraction;
 
@@ -35,7 +36,8 @@ const InitialOffer = () => {
   };
 
 
-  return (
+  return ( 
+    <>
     <div className={`inital-offer ${userInteracted ? 'hidden' : 'animate'}`} >
       {!userInteracted && (
         <div className="offer-content" >
@@ -66,6 +68,7 @@ const InitialOffer = () => {
       onCancel={handleCancel}
       />
     </div>
+    </>
   );
 };
 export {handleInteraction};

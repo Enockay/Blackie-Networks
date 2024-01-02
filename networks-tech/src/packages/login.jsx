@@ -1,10 +1,13 @@
 import react, { useState } from "react";
 
+let navigation;
+
 const LoginPage = () =>{
     const [phoneNumber,setPhoneNumber] = useState('');
     const [passcode,setPasscode] = useState('');
     const [warning,setWarning] = useState('');
     const [passWarn,setpassWarn] = useState('');
+    const [userInteracted,setUserInteracted] = useState(false);
 
     
     const passcodeCheck = (event) => {
@@ -27,8 +30,14 @@ const LoginPage = () =>{
             setpassWarn('');
         }
     }
+
+    navigation = () => {
+        setUserInteracted(true);
+    }
+
     return(
        <>
+       {!userInteracted &&
         <div className="loginPage">
             <h3 className="h32">Login Details</h3>
             <div className="label">
@@ -52,8 +61,10 @@ const LoginPage = () =>{
              <p>NB: in order to login to the Networks make sure you have an active package 
                 ,Or try buy a new package then login using your Passcode which is the MPESA code eg SLU4NU9S68</p> 
         </div>
+      }
        </>
     )
 }
 
 export default LoginPage;
+export {navigation};
