@@ -1,6 +1,9 @@
 import react, { useState } from "react";
+import loginApi from "../clientApis/loginApi";
+import { responseStatement } from "../clientApis/loginApi";
 
 let navigation;
+let phone,pass;
 
 const LoginPage = () =>{
     const [phoneNumber,setPhoneNumber] = useState('');
@@ -8,6 +11,8 @@ const LoginPage = () =>{
     const [warning,setWarning] = useState('');
     const [passWarn,setpassWarn] = useState('');
     const [userInteracted,setUserInteracted] = useState(false);
+    const [feedBack,setFeedBack] = useState('');
+    const [isLoading,setLoading] = useState('');
 
     
     const passcodeCheck = (event) => {
@@ -28,6 +33,15 @@ const LoginPage = () =>{
         }else {
             setWarning('');
             setpassWarn('');
+            phone = phoneNumber;
+            pass = passcode;
+            loginApi();
+            setLoading('signing User...');
+            setFeedBack('');
+           setInterval(() => {
+               setFeedBack(responseStatement);
+               setLoading('');
+           },5000);
         }
     }
 
@@ -43,7 +57,7 @@ const LoginPage = () =>{
             <div className="label">
                 phoneNumber :
                 <input type="Number" value={phoneNumber} required className="input1" onChange={phoneNumberChange}></input>
-                   {warning && <p style={{color: warning === 'check your phone Number kindly' ? 'white' : 'yellow',
+                   {warning && <p style={{color: warning === 'check your phone Number kindly' ? 'yellow' : 'white',
                      fontSize : '11px',marginTop : '2px'}}>
                     {warning}
                 </p>}
@@ -51,12 +65,18 @@ const LoginPage = () =>{
             <div className="label">
                 Your passcode : 
                 <input type="text" value={passcode} className="input1" onChange={passcodeCheck}></input>
-                {passWarn && <p style={{color : passWarn ==="validate your passcode" ? 'white' : 'yellow',fontSize : '11px',marginTop : '2px'}}>
+                {passWarn && <p style={{color : passWarn ==="validate your passcode" ? 'yellow' : 'white',fontSize : '11px',marginTop : '2px'}}>
                     {passWarn}
                     </p>}
             </div>
             <div>
                 <button onClick={checkForm}>Login to Network</button>
+                {isLoading && <p style={{color : isLoading === "signing User" ? 'green' : 'yellow',fontSize : '0.9rem',marginTop : '4px'}}>
+                    {isLoading}
+                    </p>}
+                {feedBack && <p style={{color : feedBack === "successfully Login" ? 'green' : 'yellow',fontSize : '0.9rem',marginTop : '4px'}}>
+                    {feedBack}
+                    </p>}
              </div>  
              <p>NB: in order to login to the Networks make sure you have an active package 
                 ,Or try buy a new package then login using your Passcode which is the MPESA code eg SLU4NU9S68</p> 
@@ -67,4 +87,4 @@ const LoginPage = () =>{
 }
 
 export default LoginPage;
-export {navigation};
+export {navigation,phone,pass};
