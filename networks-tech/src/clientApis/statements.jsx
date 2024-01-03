@@ -14,7 +14,7 @@ const StatementRequest = ({ onRequestComplete }) => {
     try {
       setLoading(true);
 
-      const response = await fetch("https://53d0-197-182-171-178.ngrok-free.app/api/getStatements", {
+      const response = await fetch("https://blackie-networks-295df9ed8dbf.herokuapp.com/api/getStatements", {
         method: 'POST',
         headers: {
         'Content-Type': 'application/json',
