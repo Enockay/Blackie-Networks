@@ -6,19 +6,25 @@ const loginApi = async () => {
    // const[isLoading,setLoading] = useState(false);
     //const[verified ,setverification] = useState('');
     console.log(phone,pass);
+    let phoneNumber = phone;
+    let orderId = pass;
+
     try{
-        const response = await fetch('/login/Api',{
+        const response = await fetch('https://blackie-networks-295df9ed8dbf.herokuapp.com/login/Api',{
             method : 'POST',
             headers : {
                 'Content-Type' : 'application/json'
             },
-            body : JSON.stringify({phone,pass})
+            body : JSON.stringify({phoneNumber,orderId})
         });
 
-          responseStatement = await response.json();
+          const incomming = await response.json();
+
+          const feedBack = incomming.responseState;
+         responseStatement = await feedBack
 
     }catch(error){
-        responseStatement = 'error in signing User'
+        responseStatement = 'user not found';
     }
     /*return(
         <>

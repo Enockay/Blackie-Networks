@@ -2,10 +2,14 @@ import React from 'react';
 
 const StatementTable = ({ data }) => {
   let dataReceived = data.statements;
+  console.log(dataReceived);
   if (!dataReceived || !Array.isArray(dataReceived)) {
     // If statements is not defined or not an array, handle it appropriately
     return <p>No statements available</p>;
-  }
+  }else if (dataReceived === "NOT FOUND"){
+    console.log(dataReceived)
+    return <p> STATEMENT NOT FOUND Check your passcode or PhoneNumber Correctly </p>
+  }else {
 
   return (
     <div className='table-container'>
@@ -49,7 +53,8 @@ const StatementTable = ({ data }) => {
       </tbody>
     </table>
     </div>
-  );
+  )
+        };
 };
 
 export default StatementTable;

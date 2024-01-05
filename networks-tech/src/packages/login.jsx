@@ -41,7 +41,7 @@ const LoginPage = () =>{
            setInterval(() => {
                setFeedBack(responseStatement);
                setLoading('');
-           },5000);
+           },10000);
         }
     }
 
