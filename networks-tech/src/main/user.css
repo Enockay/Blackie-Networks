@@ -294,6 +294,7 @@ span{
     display: flex;
     flex-direction:column;
     gap: 5%;
+    margin-left:12%;
   }
   .getStatementB{
     max-width: 6rem;
