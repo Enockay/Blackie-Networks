@@ -90,7 +90,7 @@ const LoginPage = () =>{
              <p>NB: in order to login to the Networks make sure you have an active package 
                 ,Or try buy a new package then login using your Passcode which is the MPESA code eg SLU4NU9S68</p> 
         </div>
-      )};
+      )}
 
       {successLogin && (
           <div className="loginPage">
