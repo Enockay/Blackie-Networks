@@ -19,9 +19,9 @@ const loginApi = async () => {
         });
 
           const incomming = await response.json();
+          console.log(incomming);
 
           const feedBack = incomming.responseState;
-          console.log(incomming);
           
          responseStatement = await feedBack
 
