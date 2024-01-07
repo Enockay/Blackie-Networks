@@ -2,8 +2,9 @@ import react, { useState } from "react";
 import loginApi from "../clientApis/loginApi";
 import { responseStatement } from "../clientApis/loginApi";
 
-let navigation;
+let navigation,closePage;
 let phone,pass;
+
 
 const LoginPage = () =>{
     const [phoneNumber,setPhoneNumber] = useState('');
@@ -13,6 +14,7 @@ const LoginPage = () =>{
     const [userInteracted,setUserInteracted] = useState(false);
     const [feedBack,setFeedBack] = useState('');
     const [isLoading,setLoading] = useState('');
+    const [successLogin ,setSuccessLogin] = useState('');
 
     
     const passcodeCheck = (event) => {
@@ -24,6 +26,7 @@ const LoginPage = () =>{
         setPhoneNumber(event.target.value);
         setWarning("start 2547XXXXXX")
     }
+    
 
     const checkForm = () => {
         if(phoneNumber.length !== 12){
@@ -38,10 +41,16 @@ const LoginPage = () =>{
             loginApi();
             setLoading('signing User...');
             setFeedBack('');
+
            setInterval(() => {
-               setFeedBack(responseStatement);
-               setLoading('');
-           },10000);
+                setLoading('')
+                if (responseStatement === 1) {
+                    setSuccessLogin(responseStatement);
+                }else {
+                    setFeedBack(responseStatement);
+                }  
+              
+           },5000);
         }
     }
 
@@ -51,7 +60,7 @@ const LoginPage = () =>{
 
     return(
        <>
-       {!userInteracted &&
+       {!userInteracted && !successLogin &&(
         <div className="loginPage">
             <h3 className="h32">Login Details</h3>
             <div className="label">
@@ -81,7 +90,17 @@ const LoginPage = () =>{
              <p>NB: in order to login to the Networks make sure you have an active package 
                 ,Or try buy a new package then login using your Passcode which is the MPESA code eg SLU4NU9S68</p> 
         </div>
-      }
+      )};
+
+      {successLogin && (
+          <div className="loginPage">
+          <h3><center>Successfully Logged In!
+            <p>ThankYou for Trusting in Blackie-Networks if You dont get internet access 
+                don't hesitate to whatsapp 0740629611.
+            </p>
+            </center></h3> 
+      </div>
+     )}
        </>
     )
 }

@@ -5,7 +5,6 @@ let responseStatement;
 const loginApi = async () => {
    // const[isLoading,setLoading] = useState(false);
     //const[verified ,setverification] = useState('');
-    console.log(phone,pass);
     let phoneNumber = phone;
     let orderId = pass;
 
@@ -19,14 +18,17 @@ const loginApi = async () => {
         });
 
           const incomming = await response.json();
-          console.log(incomming);
-
           const feedBack = incomming.responseState;
-          
-         responseStatement = await feedBack
+
+           if(feedBack === 1){
+               responseStatement = 1
+           }else {
+               responseStatement = await feedBack;
+           }
 
     }catch(error){
-        responseStatement = 'user not found';
+
+        responseStatement = 'error In logging In User try Again';
     }
     /*return(
         <>
