@@ -63,10 +63,12 @@ const Hourly = () => {
         onConfirm={handleConfirm}
         onCancel={handleCancel}
         message={(
+          <>
             <div>
             <p className='display'>{`confirm purchase ${selectedPackage}?`}</p>
             <label >That Amount will be deducted from your M-pesa Account</label>
           </div> 
+          </>
         )}
       />
       <Procceed
