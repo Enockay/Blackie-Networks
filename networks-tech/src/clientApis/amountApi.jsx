@@ -26,7 +26,7 @@ const PaymentButton = ({ phone }) => {
     //  console.log(allocatedTime);
       // Handle the payment response from the backend
         
-      setPaymentStatus(data.success ? 'Payment successfully processed Confirm ' : 'Payment failed');
+      setPaymentStatus(data.success ? 'Payment successfully processed Confirm  N/B keep the MPESA Code You will use to login later as passcode ' : 'Payment failed');
     } catch (error) {
       console.error('Error initiating payment:', error);
       setPaymentStatus('Payment failed');
