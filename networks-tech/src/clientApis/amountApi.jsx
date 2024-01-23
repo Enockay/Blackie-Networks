@@ -14,7 +14,7 @@ const PaymentButton = ({ phone }) => {
       // Replace with the actual details (phone number, amount, etc.)
       const phoneNumber = phone;
       const Amount = amount; // Replace with the actual amount
-      const response = await fetch("https://blackie-networks-295df9ed8dbf.herokuapp.com/api/makePayment", {
+      const response = await fetch("https://blackie-networks-295df9ed8dbf.herokuapp.com/api/callback", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
